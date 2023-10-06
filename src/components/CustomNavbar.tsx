@@ -8,26 +8,11 @@ import {
   Link,
   Button,
   NavbarMenu,
-  useDisclosure,
 } from "@nextui-org/react";
 import { useState } from "react";
 
 export default function CustomNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const {
-    isOpen: isOpenUs,
-    onOpen: onOpenUs,
-    onOpenChange: onOpenChangeUs,
-  } = useDisclosure();
-
-  const handleUsClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-    onOpenUs();
-  };
-  const handleEnviosClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <Navbar
@@ -35,7 +20,7 @@ export default function CustomNavbar() {
       isBlurred={true}
       maxWidth="full"
       onMenuOpenChange={setIsMenuOpen}
-      className="fixed h-20 p-0 lg:px-20 "
+      className="fixed h-20 p-0 xl:px-20 "
       isMenuOpen={isMenuOpen}
     >
       <NavbarBrand as={Link} href={"#main"} className="rounded-full">
@@ -72,10 +57,9 @@ export default function CustomNavbar() {
         <NavbarMenuItem>
           <Button
             size="lg"
-            className="font-bold text-lg bg-[#14CBEA] "
+            className="font-bold text-lg bg-[#14CBEA]"
             as={Link}
-            href={"#envios"}
-            onClick={handleEnviosClick}
+            href="https://wa.me/+542944959344?text=Quiero%20comprar%20un%20equipo!%20¿Cómo%20hago?"
           >
             COMPRÁ
           </Button>
@@ -85,8 +69,10 @@ export default function CustomNavbar() {
             isBlock
             color="foreground"
             className="font-bold text-lg bg-transparent"
-            as={Button}
-            onPress={handleUsClick}
+            href="#reparaciones"
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
           >
             Reparaciones
           </Link>
