@@ -30,3 +30,15 @@ body {
   background-position-y: 65%;
   background-attachment: fixed;
 }
+
+@media only screen and (max-width: 600px) {
+  .background1{
+    background-position:center;
+    background-position-y: center;
+  }
+  .background2{
+    background-attachment: scroll;
+    background-position-x: 40%;
+    background-position-y: center;
+  }
+}
