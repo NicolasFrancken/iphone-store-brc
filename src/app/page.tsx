@@ -45,7 +45,7 @@ export default function Home() {
         <Link
           isBlock
           color="foreground"
-          className="font-medium text-lg bg-black/70 flex py-3 pb-2 px-4 hover:cursor-pointer rounded-large hover:opacity-80 "
+          className="font-medium text-lg bg-black/70 flex py-3 pb-2 px-4 hover:cursor-pointer rounded-large hover:opacity-70   ease-linear duration-[0.07s]"
           href="https://www.instagram.com/iphone_store_brc/"
         >
           <p className="leading-[16px] text-center text-background">
@@ -108,7 +108,7 @@ export default function Home() {
               <Link
                 isBlock
                 color="foreground"
-                className="font-semibold text-xs bg-transparent text-background h-fit mt-1"
+                className="font-semibold text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
                 as={Button}
                 radius="sm"
                 onClick={onOpenBattery}
@@ -158,7 +158,7 @@ export default function Home() {
               <Link
                 isBlock
                 color="foreground"
-                className="font-semibold text-xs bg-transparent text-background h-fit mt-1"
+                className="font-semibold text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
                 as={Button}
                 radius="sm"
                 onClick={onOpenScreen}
@@ -207,7 +207,7 @@ export default function Home() {
               <Link
                 isBlock
                 color="foreground"
-                className="font-semibold text-xs bg-transparent text-background h-fit mt-1"
+                className="font-semibold text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
                 href="https://wa.me/+542944959344?text=Quiero%20hacer%20una%20reparación!"
               >
                 Consultá por WhatsApp
