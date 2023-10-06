@@ -202,7 +202,7 @@ export default function Home() {
             />
             <CardFooter className="justify-center bg-black/75 border-white/20 border-1 overflow-hidden py-4 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 flex flex-col min-h-[90px]">
               <h4 className="font-bold text-lg sm:text-xl text-background">
-                Otras reparaciones
+                Otras Reparaciones
               </h4>
               <Link
                 isBlock
