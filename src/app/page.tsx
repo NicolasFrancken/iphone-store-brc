@@ -202,8 +202,17 @@ export default function Home() {
             />
             <CardFooter className="justify-center bg-black/75 border-white/20 border-1 overflow-hidden py-4 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 flex flex-col min-h-[90px]">
               <h4 className="font-bold text-lg sm:text-xl text-background">
-                Limpiezas de Equipos
+                Otras reparaciones
               </h4>
+              <Link
+                isBlock
+                color="foreground"
+                className="font-semibold text-xs bg-transparent text-background h-fit mt-1"
+                href="https://wa.me/+542944959344?text=Quiero%20hacer%20una%20reparación!"
+              >
+                Consultá por WhatsApp
+                <HiOutlineExternalLink className="w-4 h-4 ml-2" />
+              </Link>
             </CardFooter>
           </Card>
         </div>
@@ -228,10 +237,10 @@ export default function Home() {
             />
           </div>
         </div>
-        <p className="text-xs lg:text-base absolute right-0 bottom-0 mr-[5rem] lg:mr-[8rem] mb-6 lg:mb-10 text-background bg-black/70 lg:py-1 pl-2 rounded-small">
+        {/* <p className="text-xs lg:text-base absolute right-0 bottom-0 mr-[5rem] lg:mr-[8rem] mb-6 lg:mb-10 text-background bg-black/70 lg:py-1 pl-2 rounded-small">
           Consultá por otras reparaciones
           <BsArrowRightShort className="inline mb-[2px] w-6 h-6" />
-        </p>
+        </p> */}
       </section>
     </NextUIProvider>
   );
