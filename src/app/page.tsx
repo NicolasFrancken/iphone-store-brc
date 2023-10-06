@@ -45,7 +45,7 @@ export default function Home() {
         <Link
           isBlock
           color="foreground"
-          className="font-medium text-lg bg-black/70 flex py-3 pb-2 px-4 hover:cursor-pointer rounded-large"
+          className="font-medium text-lg bg-black/70 flex py-3 pb-2 px-4 hover:cursor-pointer rounded-large hover:opacity-80 "
           href="https://www.instagram.com/iphone_store_brc/"
         >
           <p className="leading-[16px] text-center text-background">
