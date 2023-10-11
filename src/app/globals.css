@@ -17,18 +17,20 @@ body {
 }
 
 .background1{
-  background-image: url("../../public/foto1.jpg");
+  background-image: url("../../public/fondo3hd.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 30%;
+  background-position: center;
+  background-position-y: 90%;
 }
 
 .background2{
-  background-image: url("../../public/foto2.jpg");
+  background-image: url("../../public/fondo5hd.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 65%;
   background-attachment: fixed;
+  background-position:left bottom ;
+
 }
 
 @media only screen and (max-width: 600px) {
