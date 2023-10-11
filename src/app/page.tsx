@@ -30,7 +30,7 @@ export default function Home() {
       <CustomNavbar />
       <section
         id="main"
-        className="background1 min-h-screen px-6 xl:px-[6.5rem] py-40 pb-10 md:py-80 md:pb-10 flex flex-col justify-between items-center relative"
+        className="background1 min-h-[calc(100vh-70px)] md:min-h-screen px-6 xl:px-[6.5rem] py-40 pb-10 md:py-52 xl:py-80 md:pb-10 xl:pb-10 flex flex-col justify-between items-center relative gap-6 "
       >
         <div>
           <h1 className="font-bold text-4xl md:text-7xl lg:text-8xl text-center text-background">
@@ -62,7 +62,7 @@ export default function Home() {
           />
         </Link>
         <Button
-          className="fixed w-fit h-fit bg-transparent min-w-fit gap-unit-0 p-3 lg:p-6 bottom-0 right-0 z-10"
+          className="fixed w-fit h-fit bg-transparent min-w-fit gap-unit-0 p-3 lg:p-6 bottom-0 right-0 z-50"
           radius="full"
           as={Link}
           href="https://wa.me/+542944959344?text=Hola,%20tengo%20una%20consulta!"
@@ -72,7 +72,7 @@ export default function Home() {
             alt="WhatsApp"
             width={50}
             height={50}
-            className="flex lg:hidden"
+            className="flex lg:hidden sm-[70px]"
           />
           <Image
             src={"/WhatsApp.webp"}
@@ -87,17 +87,21 @@ export default function Home() {
         id="reparaciones"
         className="background2 min-h-screen px-6 xl:px-[6.5rem] py-32 pb-20 flex flex-col items-center justify-between gap-10 relative"
       >
-        <div className="max-w-[1300px] w-full bg-black/70 py-2 rounded-large">
+        <div className="max-w-[1300px] w-full bg-black/80 py-2 rounded-large">
           <h2 className="font-bold text-3xl md:text-5xl lg:text-6xl text-background text-center">
             Reparaciones
           </h2>
         </div>
         <div className="max-w-[1300px] w-full flex flex-col lg:flex-row justify-between items-center gap-10">
-          <Card isFooterBlurred radius="lg" className="border-none h-fit">
+          <Card
+            isFooterBlurred
+            radius="lg"
+            className="border-none h-fit w-full lg:w-fit"
+          >
             <Image
               alt="Cambio de batería de Iphone"
               src="/battery-change.jpg"
-              className="object-cover h-[400px]"
+              className="object-cover h-[400px] w-full lg:w-[300px]"
               width={300}
               height={200}
             />
@@ -108,7 +112,7 @@ export default function Home() {
               <Link
                 isBlock
                 color="foreground"
-                className="font-semibold text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
+                className="font-medium text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
                 as={Button}
                 radius="sm"
                 onClick={onOpenBattery}
@@ -119,7 +123,7 @@ export default function Home() {
               <Modal
                 isOpen={isOpenBattery}
                 onOpenChange={onOpenChangeBattery}
-                className="bg-black/70 mx-6"
+                className="bg-black/80 mx-6"
                 backdrop="blur"
                 placement={"center"}
               >
@@ -143,11 +147,15 @@ export default function Home() {
               </Modal>
             </CardFooter>
           </Card>
-          <Card isFooterBlurred radius="lg" className="border-none h-fit">
+          <Card
+            isFooterBlurred
+            radius="lg"
+            className="border-none h-fit w-full lg:w-fit"
+          >
             <Image
               alt="Cambio de pantalla de Iphone"
               src="/screen-change.jpg"
-              className="object-cover h-[400px]"
+              className="object-cover h-[400px] w-full lg:w-[300px]"
               width={300}
               height={200}
             />
@@ -158,7 +166,7 @@ export default function Home() {
               <Link
                 isBlock
                 color="foreground"
-                className="font-semibold text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
+                className="font-medium text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
                 as={Button}
                 radius="sm"
                 onClick={onOpenScreen}
@@ -169,7 +177,7 @@ export default function Home() {
               <Modal
                 isOpen={isOpenScreen}
                 onOpenChange={onOpenChangeScreen}
-                className="bg-black/70 mx-6"
+                className="bg-black/80 mx-6"
                 backdrop="blur"
                 placement={"center"}
               >
@@ -192,11 +200,15 @@ export default function Home() {
               </Modal>
             </CardFooter>
           </Card>
-          <Card isFooterBlurred radius="lg" className="border-none h-fit ">
+          <Card
+            isFooterBlurred
+            radius="lg"
+            className="border-none h-fit w-full lg:w-fit"
+          >
             <Image
               alt="Limpieza de Iphone"
-              src="/cleanup.webp"
-              className="object-cover h-[400px]"
+              src="/fondo2hd.jpg"
+              className="object-cover object-left-bottom h-[400px] w-full lg:w-[300px]"
               width={300}
               height={200}
             />
@@ -207,7 +219,7 @@ export default function Home() {
               <Link
                 isBlock
                 color="foreground"
-                className="font-semibold text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
+                className="font-medium text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
                 href="https://wa.me/+542944959344?text=Quiero%20hacer%20una%20reparación!"
               >
                 Consultá por WhatsApp
@@ -216,7 +228,7 @@ export default function Home() {
             </CardFooter>
           </Card>
         </div>
-        <div className="w-fit bg-black/75 rounded-medium md:rounded-large py-2 sm:py-4 px-4 sm:px-8 flex flex-col justify-center items-center">
+        <div className="w-fit bg-black/80 rounded-medium md:rounded-large py-2 sm:py-4 px-4 sm:px-8 flex flex-col justify-center items-center">
           <h4 className="text-background font-semibold w-fit text-center text-sm sm:text-base">
             TRABAJAMOS CON MARCAS LÍDERES
           </h4>
