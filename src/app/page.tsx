@@ -48,7 +48,7 @@ export default function Home() {
             size="lg"
             as={Link}
             href="#reparaciones"
-            className="w-fit h-fit py-2 md:py-3 px-4 md:px-6 pr-2 md:pr-4 mt-3 bg-[#14CBEA] font-bold text-sm md:text-lg gap-0 rounded-medium"
+            className="w-fit h-fit py-2 md:py-3 px-4 md:px-6 pr-2 md:pr-4 mt-1 md:mt-3 bg-[#14CBEA] font-bold text-sm md:text-lg gap-0 rounded-medium"
           >
             MEJORÁ YA TU EQUIPO
             <BsArrowDownShort className="w-6 h-6 mb-0.5 ml-1" />
