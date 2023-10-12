@@ -21,7 +21,7 @@ export default function CustomFooter() {
         </div>
         <div className="flex justify-center items-center">
           <p className="text-background text-center text-xs md:text-sm">
-            ©2023 TRANSPORTE MULTISERVICIOS <br />
+            ©2023 Iphone Store BRC <br />
             Todos los derechos reservados
           </p>
         </div>
