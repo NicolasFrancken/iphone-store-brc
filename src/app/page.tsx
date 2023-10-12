@@ -179,7 +179,7 @@ export default function Home() {
                 <Image
                   alt="Cambio de pantalla de Iphone"
                   src="/accesorio.jpg"
-                  className="object-cover h-[400px] w-full lg:w-[300px]"
+                  className="object-cover scale-150 h-[400px] w-full lg:w-[300px]"
                   width={300}
                   height={200}
                 />
