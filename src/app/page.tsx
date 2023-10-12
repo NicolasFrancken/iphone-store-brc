@@ -221,13 +221,13 @@ export default function Home() {
                               </span>{" "}
                               9D, protectores de cámaras,{" "}
                               <span className="text-[#14CBEA] font-bold">
-                                billeteras
-                              </span>
-                              ,{" "}
-                              <span className="text-[#14CBEA] font-bold">
                                 cables y cargadores
                               </span>{" "}
-                              originales
+                              originales,{" "}
+                              <span className="text-[#14CBEA] font-bold">
+                                billeteras{" "}
+                              </span>
+                              y mucho más!
                             </p>
                           </ModalBody>
                         </>
