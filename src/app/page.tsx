@@ -30,7 +30,7 @@ export default function Home() {
       <CustomNavbar />
       <section
         id="main"
-        className="background1 min-h-[calc(100vh-70px)] md:min-h-screen px-6 xl:px-[6.5rem] py-40 pb-10 md:py-52 xl:py-80 md:pb-10 xl:pb-10 flex flex-col justify-between items-center relative gap-6 "
+        className="background1 min-h-[calc(100vh-70px)] md:min-h-screen px-6 xl:px-[6.5rem] py-40 pb-10 md:py-52 xl:py-60 md:pb-10 xl:pb-10 flex flex-col justify-between items-center relative gap-6 "
       >
         <div>
           <h1 className="font-bold text-4xl md:text-7xl lg:text-8xl text-center text-background">
@@ -39,7 +39,7 @@ export default function Home() {
             EQUIPOS APPLE
           </h1>
           <p className="font-bold text-xl md:text-3xl lg:text-4xl text-background text-center">
-            +5 AÑOS REPARANDO EQUIPOS
+            +5 AÑOS EN EL RUBRO
           </p>
         </div>
         <Link
@@ -87,66 +87,70 @@ export default function Home() {
         id="reparaciones"
         className="background2 min-h-screen px-6 xl:px-[6.5rem] py-32 pb-20 flex flex-col items-center justify-between gap-10 relative"
       >
-        <div className="max-w-[1300px] w-full bg-black/80 py-2 rounded-large">
+        {/* <div className="max-w-[1300px] w-full bg-black/80 py-2 rounded-large">
           <h2 className="font-bold text-3xl md:text-5xl lg:text-6xl text-background text-center">
             Reparaciones
           </h2>
-        </div>
-        <div className="max-w-[1300px] w-full flex flex-col lg:flex-row justify-between items-center gap-10">
-          <Card
-            isFooterBlurred
-            radius="lg"
-            className="border-none h-fit w-full lg:w-fit"
-          >
-            <Image
-              alt="Cambio de batería de Iphone"
-              src="/battery-change.jpg"
-              className="object-cover h-[400px] w-full lg:w-[300px]"
-              width={300}
-              height={200}
-            />
-            <CardFooter className="justify-center bg-black/75 border-white/20 border-1 overflow-hidden py-4 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 flex flex-col">
-              <h4 className="font-bold text-lg sm:text-xl text-background">
-                Cambios de Baterías
-              </h4>
-              <Link
-                isBlock
-                color="foreground"
-                className="font-medium text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
-                as={Button}
-                radius="sm"
-                onClick={onOpenBattery}
-              >
-                Con condición de batería{" "}
-                <HiOutlineExternalLink className="w-4 h-4" />
-              </Link>
-              <Modal
-                isOpen={isOpenBattery}
-                onOpenChange={onOpenChangeBattery}
-                className="bg-black/80 mx-6"
-                backdrop="blur"
-                placement={"center"}
-              >
-                <ModalContent>
-                  {(onClose) => (
-                    <>
-                      <ModalBody className="py-7">
-                        <p className="font-medium text-background">
-                          Transplantamos el{" "}
-                          <span className="text-[#14CBEA] font-bold">flex</span>{" "}
-                          de la batería vieja a la batería nueva. Programamos
-                          ese flex para que la condición se muestre al{" "}
-                          <span className="text-[#14CBEA] font-bold">
-                            100%.
-                          </span>
-                        </p>
-                      </ModalBody>
-                    </>
-                  )}
-                </ModalContent>
-              </Modal>
-            </CardFooter>
-          </Card>
+        </div> */}
+        <div className="max-w-[1000px] w-full flex flex-col justify-between items-center gap-10">
+          <div className="min-w-full">
+            <Card
+              isFooterBlurred
+              radius="lg"
+              className="border-none h-fit w-full lg:w-fit"
+            >
+              <Image
+                alt="Cambio de batería de Iphone"
+                src="/battery-change.jpg"
+                className="object-cover h-[400px] w-full lg:w-[300px]"
+                width={300}
+                height={200}
+              />
+              <CardFooter className="justify-center bg-black/75 border-white/20 border-1 overflow-hidden py-4 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 flex flex-col">
+                <h4 className="font-bold text-lg sm:text-xl text-background">
+                  Cambios de Baterías
+                </h4>
+                <Link
+                  isBlock
+                  color="foreground"
+                  className="font-medium text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
+                  as={Button}
+                  radius="sm"
+                  onClick={onOpenBattery}
+                >
+                  Con condición de batería{" "}
+                  <HiOutlineExternalLink className="w-4 h-4" />
+                </Link>
+                <Modal
+                  isOpen={isOpenBattery}
+                  onOpenChange={onOpenChangeBattery}
+                  className="bg-black/80 mx-6"
+                  backdrop="blur"
+                  placement={"center"}
+                >
+                  <ModalContent>
+                    {(onClose) => (
+                      <>
+                        <ModalBody className="py-7">
+                          <p className="font-medium text-background">
+                            Transplantamos el{" "}
+                            <span className="text-[#14CBEA] font-bold">
+                              flex
+                            </span>{" "}
+                            de la batería vieja a la batería nueva. Programamos
+                            ese flex para que la condición se muestre al{" "}
+                            <span className="text-[#14CBEA] font-bold">
+                              100%.
+                            </span>
+                          </p>
+                        </ModalBody>
+                      </>
+                    )}
+                  </ModalContent>
+                </Modal>
+              </CardFooter>
+            </Card>
+          </div>
           <Card
             isFooterBlurred
             radius="lg"
