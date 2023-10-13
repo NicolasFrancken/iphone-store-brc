@@ -21,7 +21,7 @@ body {
 }
 
 .background1{
-  background-image: url("../../public/fondo3hd.jpg");
+  background-image: url("../../public/fondo1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -29,7 +29,7 @@ body {
 }
 
 .background2{
-  background-image: url("../../public/fondo5hd.png");
+  background-image: url("../../public/fondo2.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -47,4 +47,13 @@ body {
     background-position-x: 40%;
     background-position-y: center;
   }
+}
+
+.iphones{
+  object-position: 50% 65%;
+}
+
+.accesorios{
+  object-position: 50% 70%;
+
 }
