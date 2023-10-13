@@ -5,16 +5,18 @@ export default function CustomFooter() {
   return (
     <footer className="w-full px-6 xl:px-[6.5rem] py-4 bg-black/70  flex justify-center items-center">
       <div className="flex flex-col gap-3">
-        <div className="flex flex-col justify-center items-center gap-1">
+        <div className="flex justify-center items-center">
           <Link
-            className="text-background gap-2 text-sm md:text-base hover:cursor-pointer"
+            className="text-background gap-2 text-sm md:text-base hover:cursor-pointer pr-6 border-r-1 "
             href="https://www.instagram.com/iphone_store_brc/"
+            isExternal
           >
             <BsInstagram className="" /> Nuestro Instagram
           </Link>
           <Link
-            className="text-background gap-2 text-sm md:text-base hover:cursor-pointer"
+            className="text-background gap-2 text-sm md:text-base hover:cursor-pointer border-l-1 pl-6"
             href="https://wa.me/+542944959344?text=Hola,%20tengo%20una%20consulta!"
+            isExternal
           >
             <BsWhatsapp className="md:mb-0.5 ml-0.5" /> Nuestro WhatsApp
           </Link>

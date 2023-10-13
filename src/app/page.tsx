@@ -14,7 +14,14 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import { BsFillPersonFill, BsArrowDownShort } from "react-icons/bs";
+import {
+  BsFillPersonFill,
+  BsArrowDownShort,
+  BsTools,
+  BsPhone,
+  BsPhoneFill,
+} from "react-icons/bs";
+import { MdCable } from "react-icons/md";
 import CustomFooter from "@/components/CustomFooter";
 
 export default function Home() {
@@ -48,9 +55,9 @@ export default function Home() {
             size="lg"
             as={Link}
             href="#reparaciones"
-            className="w-fit h-fit py-2 md:py-3 px-4 md:px-6 pr-2 md:pr-4 mt-1 md:mt-3 bg-[#14CBEA] font-bold text-sm md:text-lg gap-0 rounded-medium"
+            className="w-fit h-fit py-2 md:py-3 px-4 md:px-6 pr-2 md:pr-4 mt-1 md:mt-3 bg-[#14CBEA] font-bold text-sm md:text-lg gap-0 rounded-large"
           >
-            MEJORÁ YA TU EQUIPO
+            MEJORÁ TU EQUIPO YA
             <BsArrowDownShort className="w-6 h-6 mb-0.5 ml-1" />
           </Button>
         </div>
@@ -66,7 +73,7 @@ export default function Home() {
           </p>
 
           <Image
-            src="/insta.png"
+            src="/instagram.webp"
             alt="Instagram logo"
             width={30}
             height={30}
@@ -114,13 +121,14 @@ export default function Home() {
               >
                 <Image
                   alt="Cambio de batería de Iphone"
-                  src="/screen-change.jpg"
-                  className="object-cover h-[400px] w-full"
+                  src="/reparaciones.webp"
+                  className="object-cover object-bottom h-[400px] w-full"
                   width={300}
                   height={200}
                 />
                 <CardFooter className="justify-center bg-black/75 border-white/20 border-1 overflow-hidden py-4 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 flex flex-col">
-                  <h4 className="font-bold text-lg sm:text-xl text-background">
+                  <h4 className="font-bold text-lg sm:text-2xl text-background">
+                    <BsTools className="inline w-4 h-4 sm:w-5 sm:h-5 mb-1 sm:mb-1" />{" "}
                     Reparaciones
                   </h4>
                   <Link
@@ -131,8 +139,8 @@ export default function Home() {
                     radius="sm"
                     onClick={onOpenBattery}
                   >
-                    Baterías, Pantallas, y más{" "}
-                    <HiOutlineExternalLink className="w-4 h-4" />
+                    Baterías, pantallas, y más{" "}
+                    <HiOutlineExternalLink className="w-4 h-4 mb-0.5" />
                   </Link>
                   <Modal
                     isOpen={isOpenBattery}
@@ -178,13 +186,14 @@ export default function Home() {
               >
                 <Image
                   alt="Cambio de pantalla de Iphone"
-                  src="/accesorio.jpg"
-                  className="object-cover scale-150 h-[400px] w-full lg:w-[300px]"
+                  src="/accesorios.webp"
+                  className="object-cover accesorios md:object-bottom md:scale-150 h-[400px] w-full lg:w-[300px]"
                   width={300}
                   height={200}
                 />
                 <CardFooter className="justify-center bg-black/75 border-white/20 border-1 overflow-hidden py-4 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 flex flex-col">
-                  <h4 className="font-bold text-lg sm:text-xl text-background">
+                  <h4 className="font-bold text-lg sm:text-2xl text-background">
+                    <MdCable className="inline w-5 h-5 sm:w-6 sm:h-6 mb-1 sm:mb-1" />{" "}
                     Accesorios
                   </h4>
                   <Link
@@ -196,7 +205,7 @@ export default function Home() {
                     onClick={onOpenScreen}
                   >
                     Tenemos el accesorio que buscas!{" "}
-                    <HiOutlineExternalLink className="w-4 h-4" />
+                    <HiOutlineExternalLink className="w-4 h-4 mb-0.5" />
                   </Link>
                   <Modal
                     isOpen={isOpenScreen}
@@ -243,13 +252,14 @@ export default function Home() {
               >
                 <Image
                   alt="Limpieza de Iphone"
-                  src="/foto4.jpg"
-                  className="object-cover object-left-bottom h-[400px] w-full lg:w-[300px]"
+                  src="/iphones.webp"
+                  className="object-cover iphones md:object-left-bottom  h-[400px] w-full lg:w-[300px]"
                   width={300}
                   height={200}
                 />
                 <CardFooter className="justify-center bg-black/75 border-white/20 border-1 overflow-hidden py-4 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 flex flex-col min-h-[90px]">
-                  <h4 className="font-bold text-lg sm:text-xl text-background">
+                  <h4 className="font-bold text-lg sm:text-2xl text-background">
+                    <BsPhoneFill className="inline w-4 h-4 sm:w-5 sm:h-5 mb-1 sm:mb-1" />{" "}
                     Otros productos
                   </h4>
                   <Link
@@ -259,7 +269,7 @@ export default function Home() {
                     href="https://wa.me/+542944959344?text=Quiero%20hacer%20una%20reparación!"
                   >
                     Consultá por WhatsApp
-                    <HiOutlineExternalLink className="w-4 h-4 ml-2" />
+                    <HiOutlineExternalLink className="w-4 h-4 ml-2 mb-0.5" />
                   </Link>
                 </CardFooter>
               </Card>
