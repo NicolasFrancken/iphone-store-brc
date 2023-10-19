@@ -43,9 +43,19 @@ export default function CustomNavbar() {
         </Link>
       </NavbarItem>
       <NavbarItem>
+        <Link
+          isBlock
+          color="foreground"
+          className="font-bold text-lg hidden md:flex bg-transparent"
+          href="#horarios"
+        >
+          Horarios
+        </Link>
+      </NavbarItem>
+      <NavbarItem>
         <Button
           size="lg"
-          className="font-bold text-lg bg-[#14CBEA] hidden md:flex "
+          className="font-bold text-lg bg-[#14CBEA] hidden md:flex ml-2"
           as={Link}
           href="https://wa.me/+542944657773?text=Quiero%20comprar%20un%20producto,%20¿cómo%20hago?"
         >
@@ -57,7 +67,7 @@ export default function CustomNavbar() {
         <NavbarMenuItem>
           <Button
             size="lg"
-            className="font-bold text-lg bg-[#14CBEA]"
+            className="font-bold text-lg bg-[#14CBEA] mb-[10px]"
             as={Link}
             href="https://wa.me/+542944657773?text=Quiero%20comprar%20un%20producto,%20¿cómo%20hago?"
           >
@@ -75,6 +85,19 @@ export default function CustomNavbar() {
             }}
           >
             Reparaciones
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            isBlock
+            color="foreground"
+            className="font-bold text-lg bg-transparent"
+            href="#horarios"
+            onClick={() => {
+              setIsMenuOpen(!isMenuOpen);
+            }}
+          >
+            Horarios
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>
