@@ -159,7 +159,7 @@ export default function Home() {
                               <span className="text-[#14CBEA] font-bold">
                                 cambios de baterías
                               </span>{" "}
-                              con condición de batería,{" "}
+                              con condición de batería al 100% y sin mensaje,{" "}
                               <span className="text-[#14CBEA] font-bold">
                                 cambios de pantallas
                               </span>{" "}
