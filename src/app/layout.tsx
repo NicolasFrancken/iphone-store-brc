@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IphoneStoreBRC | Reparación de Equipos Apple",
-  description: "Servicio Técnico de equipos Apple",
+  title: "IphoneStoreBRC | Reparación de Equipos Apple en Bariloche",
+  description: "Servicio Técnico de equipos Apple en Bariloche",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
