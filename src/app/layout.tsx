@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Head from "next/head";
 // import { Inter } from "next/font/google";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -16,6 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <title>IphoneStoreBRC | Reparación de Equipos Apple en Bariloche</title>
+        <meta
+          name="description"
+          content="Servicio Técnico de equipos Apple en Bariloche"
+        />
+      </Head>
       <body>{children}</body>
     </html>
   );
