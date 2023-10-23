@@ -23,6 +23,11 @@ export default function RootLayout({
           name="description"
           content="Servicio Técnico de equipos Apple en Bariloche"
         />
+
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
       </Head>
       <body>{children}</body>
     </html>
