@@ -6,8 +6,16 @@ import Head from "next/head";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "IphoneStoreBRC | Reparación de Equipos Apple en Bariloche",
+  title: {
+    default: "IphoneStoreBRC | Reparación de Equipos Apple en Bariloche",
+    template: `%s - IphoneStoreBRC | Reparación de Equipos Apple en Bariloche`,
+  },
   description: "Servicio Técnico de equipos Apple en Bariloche",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
