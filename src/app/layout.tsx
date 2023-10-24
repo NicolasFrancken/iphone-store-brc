@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <Head>
         <title>IphoneStoreBRC | Reparación de Equipos Apple en Bariloche</title>
         <meta
