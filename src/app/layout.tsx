@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
   },
+  verification: { google: "VfeLFNPMc02yvj3OR60sAmeaDzlGUd9aLTRL2VxlM60" },
 };
 
 export default function RootLayout({
@@ -31,7 +32,10 @@ export default function RootLayout({
           name="description"
           content="Servicio Técnico de equipos Apple en Bariloche"
         />
-
+        <meta
+          name="google-site-verification"
+          content="VfeLFNPMc02yvj3OR60sAmeaDzlGUd9aLTRL2VxlM60"
+        />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
