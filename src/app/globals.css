@@ -21,7 +21,7 @@ body {
 }
 
 .background1{
-  background-image: url("../../public/fondo1.webp");
+  background-image: url("../../public/images/fondo1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -29,7 +29,7 @@ body {
 }
 
 .background2{
-  background-image: url("../../public/fondo2.webp");
+  background-image: url("../../public/images/fondo2.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -37,7 +37,7 @@ body {
 }
 
 .background3{
-  background-image: url("../../public/fondo3.webp");
+  background-image: url("../../public/images/fondo3.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

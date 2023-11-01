@@ -89,14 +89,14 @@ export default function Home() {
           href="https://wa.me/+542944657773?text=Hola,%20tengo%20una%20consulta!"
         >
           <Image
-            src={"/WhatsApp.webp"}
+            src={"/images/WhatsApp.webp"}
             alt="WhatsApp"
             width={50}
             height={50}
             className="flex lg:hidden sm-[70px]"
           />
           <Image
-            src={"/WhatsApp.webp"}
+            src={"/images/WhatsApp.webp"}
             alt="WhatsApp"
             width={70}
             height={70}
@@ -118,7 +118,7 @@ export default function Home() {
             >
               <Image
                 alt="Cambio de batería de Iphone"
-                src="/reparaciones.webp"
+                src="/images/reparaciones.webp"
                 className="object-cover object-bottom h-[400px] w-full"
                 width={300}
                 height={200}
@@ -183,7 +183,7 @@ export default function Home() {
             >
               <Image
                 alt="Cambio de pantalla de Iphone"
-                src="/accesorios.webp"
+                src="/images/accesorios.webp"
                 className="object-cover accesorios md:object-bottom md:scale-150 h-[400px] w-full lg:w-[300px]"
                 width={300}
                 height={200}
@@ -248,7 +248,7 @@ export default function Home() {
             >
               <Image
                 alt="Limpieza de Iphone"
-                src="/iphones.webp"
+                src="/images/iphones.webp"
                 className="object-cover iphones md:object-left-bottom  h-[400px] w-full lg:w-[300px]"
                 width={300}
                 height={200}
@@ -277,14 +277,14 @@ export default function Home() {
           </h4>
           <div className="flex gap-4  items-center justify-center w-full mt-2">
             <Image
-              src="/ampsentrix.png"
+              src="/images/ampsentrix.png"
               alt="ampsentrix logo"
               width={132}
               height={21}
               className="w-[88px] h-[14px] sm:w-[132px] sm:h-[21px]"
             />
             <Image
-              src="/foxconn.png"
+              src="/images/foxconn.png"
               alt="foxconn logo"
               width={132}
               height={21}
