@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   },
   description: "Servicio Técnico de equipos Apple en Bariloche",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/images/favicon.ico",
+    shortcut: "/images/favicon-16x16.png",
+    apple: "/images/apple-touch-icon.png",
   },
   verification: { google: "VfeLFNPMc02yvj3OR60sAmeaDzlGUd9aLTRL2VxlM60" },
 };
@@ -36,10 +36,24 @@ export default function RootLayout({
           name="google-site-verification"
           content="VfeLFNPMc02yvj3OR60sAmeaDzlGUd9aLTRL2VxlM60"
         />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon-16x16.png"
+        />
       </Head>
       <body>{children}</body>
     </html>
