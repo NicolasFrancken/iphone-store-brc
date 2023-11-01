@@ -1,16 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Head from "next/head";
-// import { Inter } from "next/font/google";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
     default: "IphoneStoreBRC | Reparación de Equipos Apple en Bariloche",
     template: `%s - IphoneStoreBRC | Reparación de Equipos Apple en Bariloche`,
   },
-  description: "Servicio Técnico de equipos Apple en Bariloche",
+  description: "Servicio Técnico de equipos Apple en Bariloche.",
   icons: {
     icon: "/images/favicon.ico",
     shortcut: "/images/favicon-16x16.png",
