@@ -25,7 +25,7 @@ export default function CustomNavbar() {
     >
       <NavbarBrand as={Link} href={"#main"} className="rounded-full">
         <Image
-          src={"/logo.jpg"}
+          src={"/images/logo.jpg"}
           alt="logo"
           width={70}
           height={70}

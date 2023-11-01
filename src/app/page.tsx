@@ -75,7 +75,7 @@ export default function Home() {
           </p>
 
           <Image
-            src="/instagram.webp"
+            src="/images/instagram.webp"
             alt="Instagram logo"
             width={30}
             height={30}
