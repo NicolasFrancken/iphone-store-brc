@@ -179,12 +179,12 @@ export default function Home() {
             <Card
               isFooterBlurred
               radius="lg"
-              className="border-none h-fit w-full lg:w-fit"
+              className="border-none h-fit w-full"
             >
               <Image
                 alt="Cambio de pantalla de Iphone"
                 src="/images/accesorios.webp"
-                className="object-cover accesorios md:object-bottom md:scale-150 h-[400px] w-full lg:w-[300px]"
+                className="object-cover accesorios h-[400px] w-full"
                 width={300}
                 height={200}
               />
@@ -241,7 +241,7 @@ export default function Home() {
                 </Modal>
               </CardFooter>
             </Card>
-            <Card
+            {/* <Card
               isFooterBlurred
               radius="lg"
               className="border-none h-fit w-full lg:w-fit"
@@ -268,7 +268,7 @@ export default function Home() {
                   <HiOutlineExternalLink className="w-4 h-4 ml-2 mb-0.5" />
                 </Link>
               </CardFooter>
-            </Card>
+            </Card> */}
           </div>
         </div>
         <div className="w-full max-w-[700px] bg-black/80 rounded-medium md:rounded-large py-2 sm:py-4 px-4 sm:px-8 flex flex-col justify-center items-center">

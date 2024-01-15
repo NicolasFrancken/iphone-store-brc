@@ -52,7 +52,7 @@ export default function CustomNavbar() {
           Horarios
         </Link>
       </NavbarItem>
-      <NavbarItem>
+      {/* <NavbarItem>
         <Button
           size="lg"
           className="font-bold text-lg bg-[#14CBEA] hidden md:flex ml-2"
@@ -61,7 +61,7 @@ export default function CustomNavbar() {
         >
           COMPRÁ
         </Button>
-      </NavbarItem>
+      </NavbarItem> */}
       <NavbarMenuToggle className="md:hidden" />
       <NavbarMenu className="flex flex-col items-center justify-center">
         <NavbarMenuItem>
