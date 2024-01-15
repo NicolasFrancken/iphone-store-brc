@@ -64,7 +64,7 @@ export default function CustomNavbar() {
       </NavbarItem> */}
       <NavbarMenuToggle className="md:hidden" />
       <NavbarMenu className="flex flex-col items-center justify-center">
-        <NavbarMenuItem>
+        {/* <NavbarMenuItem>
           <Button
             size="lg"
             className="font-bold text-lg bg-[#14CBEA] mb-[10px]"
@@ -73,7 +73,7 @@ export default function CustomNavbar() {
           >
             COMPRÁ
           </Button>
-        </NavbarMenuItem>
+        </NavbarMenuItem> */}
         <NavbarMenuItem>
           <Link
             isBlock
