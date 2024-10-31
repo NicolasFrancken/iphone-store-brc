@@ -15,7 +15,7 @@ export default function CustomFooter() {
           </Link>
           <Link
             className="text-background gap-2 text-sm md:text-base hover:cursor-pointer border-l-1 pl-6"
-            href="https://wa.me/+542944657773?text=Hola,%20tengo%20una%20consulta!"
+            href="https://wa.me/+542944662166?text=Hola,%20tengo%20una%20consulta!"
           >
             <BsWhatsapp className="md:mb-0.5 ml-0.5" /> Nuestro WhatsApp
           </Link>

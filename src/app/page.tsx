@@ -86,7 +86,7 @@ export default function Home() {
           className="fixed w-fit h-fit bg-transparent min-w-fit gap-unit-0 m-2 lg:m-5 p-1 lg:p-1 bottom-0 right-0 z-50"
           radius="full"
           as={Link}
-          href="https://wa.me/+542944657773?text=Hola,%20tengo%20una%20consulta!"
+          href="https://wa.me/+542944662166?text=Hola,%20tengo%20una%20consulta!"
         >
           <Image
             src={"/images/WhatsApp.webp"}
@@ -262,7 +262,7 @@ export default function Home() {
                   isBlock
                   color="foreground"
                   className="font-medium text-xs bg-transparent text-background h-fit mt-1 hover:opacity-70  ease-linear duration-[0.07s]"
-                  href="https://wa.me/+542944657773?text=Quiero%20comprar%20un%20equipo,%20¿cómo%20hago?"
+                  href="https://wa.me/+542944662166?text=Quiero%20comprar%20un%20equipo,%20¿cómo%20hago?"
                 >
                   Consultá por WhatsApp
                   <HiOutlineExternalLink className="w-4 h-4 ml-2 mb-0.5" />

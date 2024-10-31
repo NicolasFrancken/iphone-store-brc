@@ -57,7 +57,7 @@ export default function CustomNavbar() {
           size="lg"
           className="font-bold text-lg bg-[#14CBEA] hidden md:flex ml-2"
           as={Link}
-          href="https://wa.me/+542944657773?text=Quiero%20comprar%20un%20producto,%20¿cómo%20hago?"
+          href="https://wa.me/+542944662166?text=Quiero%20comprar%20un%20producto,%20¿cómo%20hago?"
         >
           COMPRÁ
         </Button>
@@ -69,7 +69,7 @@ export default function CustomNavbar() {
             size="lg"
             className="font-bold text-lg bg-[#14CBEA] mb-[10px]"
             as={Link}
-            href="https://wa.me/+542944657773?text=Quiero%20comprar%20un%20producto,%20¿cómo%20hago?"
+            href="https://wa.me/+542944662166?text=Quiero%20comprar%20un%20producto,%20¿cómo%20hago?"
           >
             COMPRÁ
           </Button>
